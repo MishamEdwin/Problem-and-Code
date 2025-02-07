@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,arr[100][100],lsum=0,rsum=0;
+
+    cin>>n;
+
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cin>>arr[i][j];
+        }
+    }
+    cout<<endl;
+
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cout<<arr[i][j]<<" ";
+        }
+        cout << endl;
+    }
+
+    for(int i=0;i<n;i++){
+        lsum+=arr[i][i];
+    }
+
+    cout<<"\n lsum ="<<lsum;
+
+    for(int i=0;i<n;i++){
+        rsum+=arr[i][n-1-i];
+    }
+
+    cout<<"\n rsum ="<<rsum;
+
+    int mod=lsum-rsum;
+
+    cout<<"\n"<<abs(mod);
+
+
+    return 0;
+}
