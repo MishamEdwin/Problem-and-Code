@@ -1,15 +1,17 @@
-n=7
+n=5
 
-#Top row
-for i in range(1,n+1):
+#First
+for i in range(n):
     print("* ",end="")
 print()
 
-#Middle
-
+#Top
 for i in range(n):
-    print("*",chr(32)*5,"*",end="")
+    print("*"+" "*n +"*")
 print()
-#Bottom row
-for i in range(1,n+1):
+
+
+
+#Last
+for i in range(n):
     print("* ",end="")

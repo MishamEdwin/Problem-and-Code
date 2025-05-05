@@ -1,4 +1,4 @@
-n=20
+n=50
 first=0
 second=1
 
